@@ -1,0 +1,144 @@
+
+footer{
+	background-color: #2d3339;
+	line-height: 20px;
+	color: white;
+}
+
+footer .art{
+	background-color: #6e7e8d;
+	padding: 16px;
+	padding-top:45px;
+	clip-path: polygon(0% 5%,15% 0%, 100% 10%, 100% 100%, 0% 100%);
+}
+
+
+footer .content{
+	max-width: 1080px;
+	margin: auto;
+	display: grid;
+	grid-template-columns:repeat(3, 1fr) ;
+	grid-gap: 16px;	
+}
+
+footer header{
+	font-size: 21px;
+	padding-block: 16px;
+}
+
+footer .contact{
+	width: calc(35% 60px);
+	margin-right: 0 !important;
+	padding-left: 10px;
+
+}
+
+footer .content .info li{
+	display:flex;
+	margin-bottom: 16px;
+	grid-template-columns: 30px 1fr;
+}
+
+footer .contact .info li span:nth-child(1){
+	color: #fff;
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+footer .contact .info li span{
+	color: white;
+}
+
+footer .contact .info li a{
+	color: white;
+	text-decoration: none;
+}
+
+footer .contact .info li a: hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+footer .content a{
+	display: block;
+	padding-block: 10px;
+	color:white ;
+	opacity: 0.65;
+	text-decoration: none;
+}
+
+footer .content a:hover{
+	opacity: 1;
+	color:#ffff00 ;
+	font-size: 18px;
+}
+
+footer input{
+	border-style: solid;
+	line-height: 24px;
+	padding: 12px 16px;
+	font-size: 1rem;
+	width: 100%;
+	margin-block: 8px;
+	border-radius: 8px;
+	border-width: 2px;
+}
+
+footer input[type="email"]{
+	background-color: transparent;
+	border-color: white;
+	color: white;
+}
+
+footer input[type="email"]:hover,
+footer input[type="email"]:focus{
+	border-color: #ffff00;
+	color: #ffff00;
+}
+
+footer input[type="submit"]{
+	background-color: white;
+	color: #24aa94;
+	text-transform: uppercase;
+	border: none;
+}
+
+footer input[type="submit"]:hover{
+	background-color: #ffff00;
+}
+
+footer .social{
+	margin-block: 14px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 16px;
+}
+
+footer .social i{
+	font-size: 32px;
+	padding: 12px;
+	text-align: center;
+	border: 0px solid #ffff0031;
+	border-radius: 8px;
+	width: 100%;
+}
+
+footer .social i:hover{
+	color: #ffff00;
+	border-color: #ffff00;
+	box-shadow: 0px 0px 16px inset #ffff0031;
+}
+
+footer .notice{
+	text-align: center;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+footer .notice strong{
+	color: #ffff00;
+	text-transform: uppercase;
+}
+
+
+

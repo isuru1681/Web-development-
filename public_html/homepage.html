@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<style>
+		* {box-sizing: border-box;}
+		body {
+			font-family: Verdana, sans-serif;
+			background-color: black;
+		}
+		.slides {display: none;}
+		img {vertical-align: middle;}
+
+		
+		.slideshow-container {
+		  max-width: 1000px;
+		  position: relative;
+		  margin: auto;
+		}
+		.text1 {
+		  color: #ffff1a;
+		  font-size: 80px;
+		  padding: 12px 12px;
+		  position: absolute;
+		  top: 20px;
+		  width: 100%;
+		  text-align: center;
+		}
+
+		
+		.text {
+		  color: #ffff1a;
+		  font-size: 80px;
+		  padding: 12px 12px;
+		  position: absolute;
+		  top: 20px;
+		  width: 100%;
+		  text-align: center;
+		}
+		.caption{
+			color: white;
+			font-size: 35px;
+			text-align: center;
+		}
+		.dot {
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+		.brand{
+		font-size: 32px;
+		padding: 5%;
+		text-align: center;
+		}
+
+		.active {
+		  background-color: #717171;
+		}
+
+		
+		.fade {
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		
+		@media only screen and (max-width: 300px) {
+		  .text {font-size: 11px}
+		}
+</style>
+</head>
+<body>
+	<!-- Nav bar -->
+     <nav>
+		<div class="logo">
+			<img src="images/logo.png" width="105" height="70">
+		</div>
+		<ul>
+		  <li><a href="homepage.html" class="active">Home</a></li>
+          <li><a href="additionalpage.html" >History</a></li>
+          <li><a href="Quiz.html">Quiz</a></li>
+          <li><a href="Thumnail2.html">Gallery</a></li>
+          <li><a href="productspage.html">Packages</a></li>
+          <li><a href="personal.html" >About Us</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+		</ul>	
+	</nav>	
+	
+<br><br><br><br><br><br>
+
+<div class="slideshow-container">
+
+<div class="slides">
+  
+  <img src="D:\UOW Web Hosting\localsite\public_html\images\music.webp" style="width:100%">
+  <div class="text">Welcome to Mixin' Music</div>
+<div class="logo2"><img src="images/logo.png" width="105" height="70"></div>
+  
+</div>
+
+<div class="slides">
+  <
+  <img src="D:\UOW Web Hosting\localsite\public_html\images\1506485927884.jpg" style="width:100%">
+  <div class="text1">Let's enjoy</div>
+</div>
+
+<div class="slides">
+  
+  <img src="D:\UOW Web Hosting\localsite\public_html\images\3192310.webp" style="width:100%">
+  <div class="text">with us....!!</div>
+</div>
+
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+ 
+ <div class="caption">
+ 	<p>Anyone can be a DJ but it's understanding how to read a crowd and keeping them on the floor is what takes years of experience.</p>
+ </div>
+
+<div class="brand">
+<a href="https://www.spotify.com/"><i class="fab fa-spotify"></i></a>
+<a href="https://www.apple.com/"><i class="fab fa-apple"></i></a>
+</div>
+
+ 
+
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("slides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); 
+}
+</script>
+
+</body>
+	<footer>
+		<div class="art">
+			<div class="content">
+			<section>
+				<header>Quick Links</header>
+				<a href="homepage.html">Home</a>
+				<a href="personal.html">About Us</a>
+				<a href="Queryform.html">Contact</a>
+				<br><br>
+				<a href="personal.html">Page Editor(all members)</a>
+			</section>
+			<section>
+				<header>Contact Info</header>
+				<div class="contact">
+				<ul class="info">
+					<li>
+						<span><i class="fa-solid fa-location-dot"></i></span>
+						<span>675 Prince Street<br>
+						Colombo<br>Sri Lanka</span>
+					</li>
+					<br><br>
+					<li>
+						<span><i class="fa-solid fa-phone"></i></span>
+						<p><a href="tel:12345678900">+1 234 567 8900</a></p>
+					</li>
+					
+					<li>
+						<span><i class="fa-solid fa-envelope"></i></span>
+						<p><a href="mailto:mixinmusic@gmail.com">mixinmusic@gmail.com</a></p>
+					</li>	
+				</ul>
+				</div>
+				
+			</section>
+			<section>
+				<header>Newsletter</header>
+				<form action="">
+					<input type="email" placeholder="Your Email here" id="email">
+					<input type="submit" value="Subscribe Now">	
+				</form>
+				<div class="social">
+					<a href="https://www.facebook.com/"><i class="fab fa-facebook"></i>
+					<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>
+					<a href="https://twitter.com/"><i class="fab fa-twitter"></i>
+					<a href="https://www.youtube.com/"><i class="fab fa-youtube"></i>
+					<a href="https://telegram.org/"><i class="fab fa-telegram"></i>
+				</div>
+			</section>
+			</div>
+			<div class="notice">
+				Copyright Protected &copy;
+				<strong>MIXIN MUSIC</strong>
+			</div>
+		</div>
+	</footer>
+</html> 

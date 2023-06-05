@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<meta charset="utf-8">
+	
+	<title>Quiz</title>
+	
+	<link rel="icon" href="images/logo.png" type="icon type">
+	<link rel="stylesheet"  href="Quiz.css">
+	<link rel="stylesheet" href="navbar.css">
+	<link rel="stylesheet" href="footer.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+<div class="backgroundimage"></di>
+	<!-- Nav bar -->
+     <nav>
+		<div class="logo">
+			<img src="images/logo.png" width="105" height="70">
+		</div>
+		<ul>
+			<li><a href="homepage.html" >Home</a></li>
+      <li><a href="additionalpage.html" >History</a></li>
+      <li><a href="Quiz.html">Quiz</a></li>
+      <li><a href="Thumnail2.html">Gallery</a></li>
+      <li><a href="productspage.html">Packages</a></li>
+      <li><a href="personal.html" class="active">About Us</a></li>
+      <li><a href="sitemap.html">Sitemap</a></li>
+		</ul>	
+	</nav>
+	
+	<!--Form-->
+	<br><br><br><br><br><br><br><br>
+	 
+	<h1>Mixin' Music Quiz</h1>
+	<br><br><br><br><br><br><br><br>
+	
+	<input type="button" value="Start!" class="button-hover start" onclick="start (); myFunction(); timer(); ">
+	
+	<div id="backColor">
+	<form name="quiz" id="quiz">
+		<p>1.Who was the first brand to create DJ software? </p><br>
+			<p><input type="radio" name="q1" id="q1" value=1><label for="q1">A.Native instrument</label></p><br>
+			<p><input type="radio" name="q1" id="q1" value=2><label for="q1">B.Serato</label></p><br>
+			<p><input type="radio" name="q1" id="q1" value=3><label for="q1">C.Apple</label></p><br>
+			<p><input type="radio" name="q1" id="q1" value=4><label for="q1">D.Pioneer</label></p><br>
+	
+	    <br>
+		<p>2.Who was the first DJ that used slip-cueing?</p><br>
+			<p><input type="radio" name="q2" id="q2" value=1><label for="q2">A.Francis Grasso</label></p><br>
+			<p><input type="radio" name="q2" id="q2" value=2><label for="q2">B.Olav Basoski</label></p><br><br>
+			<p><input type="radio" name="q2" id="q2" value=3><label for="q2">C.Frankie Knuckles</label></p><br>
+			<p><input type="radio" name="q2" id="q2" value=4><label for="q2">D.Larry Levan</label></p><br>
+		
+		<br>
+		<p>3.what items does not need for Dj artist</p><br>
+			<p><input type="radio" name="q3" id="q3" value=1><label for="q3">A.Dj controller</label></p><br>
+			<p><input type="radio" name="q3" id="q3" value=2><label for="q3">B.Speakers</label></p><br>
+			<p><input type="radio" name="q3" id="q3" value=3><label for="q3">C.Headphone</label></p><br>
+			<p><input type="radio" name="q3" id="q3" value=4><label for="q3">D.Gun</label></p><br>
+		
+        <br>		
+		<p>4.What does a DJ do??</p><br>
+			<p><input type="radio" name="q4" id="q4" value=1><label for="q4">A.Guard the door</label></p><br>
+			<p><input type="radio" name="q4" id="q4" value=2><label for="q4">B.Protect songs</label></p><br>
+			<p><input type="radio" name="q4" id="q4" value=3><label for="q4">C.Play games</label></p><br>
+			<p><input type="radio" name="q4" id="q4" value=4><label for="q4">D.Provide music</label></p><br>
+		
+        <br>		
+		<p>5.What does the DJ hear on his headphones?</p><br>
+			<p><input type="radio" name="q5" id="q5" value=1><label for = "q5">A.The mixer</label></p><br>
+			<p><input type="radio" name="q5" id="q5" value=2><label for = "q5">B.The crowd</label></p><br>
+			<p><input type="radio" name="q5" id="q5" value=3><label for = "q5">C.The CUE</label></p><br>
+			<p><input type="radio" name="q5" id="q5" value=4><label for = "q5">D.The master</label></p><br>
+		
+        <br>		
+		<p>6.Who is the most famous Dj artist?</p><br>
+			<p><input type="radio" name="q6" id="q6" value=1><label for = "q6">A.David  Guetta</label></p><br>
+			<p><input type="radio" name="q6" id="q6" value=2><label for = "q6">B.Martin Garrix</label></p><br>
+			<p><input type="radio" name="q6" id="q6" value=3><label for = "q6">C.Armin Van Buuren</label></p><br>
+			<p><input type="radio" name="q6" id="q6" value=4><label for = "q6">D.Alok</label></p><br>
+		
+        <br>		
+		<p>7.Who was the world first Dj artict?</p><br>
+			<p><input type="radio" name="q7" id="q7" value=1><label for = "q7">A.Francis Grasso</label></p><br><br>
+			<p><input type="radio" name="q7" id="q7" value=2><label for = "q7">B.Olav Basoski</label></p><br><br>
+			<p><input type="radio" name="q7" id="q7" value=3><label for = "q7">C.Larry Levan</label></p><br><br>
+			<p><input type="radio" name="q7" id="q7" value=4><label for = "q7">D.Jimmy Savile</label></p><br><br>
+		
+        <br>		
+		<p>8.Where did the first DJ released?</p><br>
+			<p><input type="radio" name="q8" id="q8" value=1><label for = "q8">A.South Africa</label></p><br><br>
+			<p><input type="radio" name="q8" id="q8" value=2><label for = "q8">B.England</label></p><br><br>
+			<p><input type="radio" name="q8" id="q8" value=3><label for = "q8">C.Australia</label></p><br><br>
+			<p><input type="radio" name="q8" id="q8" value=4><label for = "q8">D.India</label></p><br><br>
+		
+        <br>		
+		<p>9.When did the first DJ released?</p><br>
+			<p><input type="radio" name="q9" id="q9" value=1><label for = "q9">A.2000</label></p><br><br>
+			<p><input type="radio" name="q9" id="q9" value=2><label for = "q9">B.1948</label></p><br><br>
+			<p><input type="radio" name="q9" id="q9" value=3><label for = "q9">C.1960</label></p><br><br>
+			<p><input type="radio" name="q9" id="q9" value=4><label for = "q9">D.1943</label></p><br>
+		
+        <br>		
+		<p>10. What year was the first SL1200 released??</p><br>
+			<p><input type="radio" name="q10" id="q10" value=1><label for = "q10">A.2011</label></p><br>
+			<p><input type="radio" name="q10" id="q10" value=2><label for = "q10">B.2015</label></p><br>
+			<p><input type="radio" name="q10" id="q10" value=3><label for = "q10">C.1960</label></p><br>
+			<p><input type="radio" name="q10" id="q10" value=4><label for = "q10">D.1972</label></p><br>
+			
+			<br>
+			<div>Seconds: <span id="time"></span></div>
+			<input type="button" value="Done" class="sumbitBtn" onclick="endQuiz(); stop();">
+			<input type="button" value="Back to Quiz" class="sumbitBtn" onclick="backToQuiz();">
+			
+	</form>
+	</div>
+	
+	<div id="end"></div>
+
+<script src="quiz.js"></script>	
+</body>
+	<footer>
+		<div class="art">
+			<div class="content">
+			<section>
+				<header>Quick Links</header>
+				<a href="homepage.html">Home</a>
+				<a href="personal.html">About Us</a>
+				<a href="Queryform.html">Contact</a>
+				<br><br>
+				<a href="isuru.html">Page Editor</a>
+			</section>
+
+			<section>
+				<header>Contact Info</header>
+				<div class="contact">
+				<ul class="info">
+					<li>
+						<span><i class="fa-solid fa-location-dot"></i></span>
+						<span>675 Prince Street<br>
+						Colombo<br>Sri Lanka</span>
+					</li>
+					<br><br>
+					<li>
+						<span><i class="fa-solid fa-phone"></i></span>
+						<p><a href="tel:12345678900">+1 234 567 8900</a></p>
+					</li>
+					
+					<li>
+						<span><i class="fa-solid fa-envelope"></i></span>
+						<p><a href="mailto:mixinmusic@gmail.com">mixinmusic@gmail.com</a></p>
+					</li>	
+				</ul>
+				</div>
+				
+			</section>
+
+			<section>
+				<header>Newsletter</header>
+				<form action="">
+					<input type="email" placeholder="Your Email here" id="email">
+					<input type="submit" value="Subscribe Now">	
+				</form>
+				<div class="social">
+					<a href="https://www.facebook.com/"><i class="fab fa-facebook"></i>
+					<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>
+					<a href="https://twitter.com/"><i class="fab fa-twitter"></i>
+					<a href="https://www.youtube.com/"><i class="fab fa-youtube"></i>
+					<a href="https://telegram.org/"><i class="fab fa-telegram"></i>
+				</div>
+			</section>
+			</div>
+
+			<div class="notice">
+				Copyright Protected &copy;
+				<strong>MIXIN MUSIC</strong>
+			</div>
+		</div>
+	</footer>
+</html>
